@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  town_id: 1
+  username: MyString
+  timestamp: 2012-11-11 18:27:52
+  image_url: MyString
+  thumbnail_url: MyString
+  media_id: MyString
+
+two:
+  town_id: 1
+  username: MyString
+  timestamp: 2012-11-11 18:27:52
+  image_url: MyString
+  thumbnail_url: MyString
+  media_id: MyString

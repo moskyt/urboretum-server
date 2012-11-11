@@ -1,0 +1,7 @@
+%h1 Seznam měst
+
+- for town in Town.all
+  %p
+    = town.name
+    = surround '[', ']' do
+      = town.department
