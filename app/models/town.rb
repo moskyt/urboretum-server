@@ -4,6 +4,8 @@ class Town < ActiveRecord::Base
   
   has_many :visits
   
+  scope :visited_by, lambda{|username| joins(:visits).where('visits.username = ?', username).group('towns.id')}
+  
   def self.locate(latitude, longitude)
     min = nil
     fit = nil
