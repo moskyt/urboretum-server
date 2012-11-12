@@ -48,7 +48,7 @@ class InstagramController < ApplicationController
             visit.update_attributes(
               :image_url => media.images.standard_resolution.url,
               :thumbnail_url => media.images.thumbnail.url,
-              :timestamp => Time.at(entry.created_time.to_i),
+              :timestamp => Time.at(entry.created_time.to_i)
             )
           end
         end
