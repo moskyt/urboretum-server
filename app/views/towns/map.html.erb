@@ -33,15 +33,13 @@
 
     <% Town.all.each do |town| %>
       <% 
-        visits = [] 
-        if instagram_user
-          visits = town.visits.by(instagram_user.username)
-        end
+        visits = instagram_user ? town.visits.by(instagram_user.username) : []
+        other_visits = town.visits - visits
       %>
       var marker<%=town.id%> = new google.maps.Marker({
           position: new google.maps.LatLng(<%=town.latitude%>,<%=town.longitude%>),
           map: map,
-          <% if visits.any? %>
+          <% if (instagram_users && visits.any?) or (!instagram_users && other_visits.any?) %>
           icon: 'assets/markers/blue_MarkerX.png',
           <% else %>
           icon: 'assets/markers/red_MarkerX.png',
@@ -57,7 +55,11 @@
         <% end %>
         + '<br />okres <%= town.department %><br />'
         <% visits.each do |visit| %>
-        + '<br /> <%= visit.timestamp ? visit.timestamp.strftime("%d. %m. %Y") : nil %><br /><%= link_to_function image_tag(visit.thumbnail_url, :size => '150x150'), "Shadowbox.open({player:\\'img\\',content:\\'#{visit.image_url}\\',height: 612,width:612 });"%>'
+        + '<br /> <%= visit.timestamp.strftime("%d. %m. %Y") %><br /><%= link_to_function image_tag(visit.thumbnail_url, :size => '150x150'), "Shadowbox.open({player:\\'img\\',content:\\'#{visit.image_url}\\',height: 612,width:612 });"%>'
+        <% end %>
+        + '<br />'
+        <% other_visits.each do |visit| %>
+        + '<%= link_to_function image_tag(visit.thumbnail_url, :size => '64x64'), "Shadowbox.open({player:\\'img\\',content:\\'#{visit.image_url}\\',height: 612,width:612 });"%>'
         <% end %>
         + '</div>';
 
