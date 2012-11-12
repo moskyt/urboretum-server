@@ -39,7 +39,7 @@
       var marker<%=town.id%> = new google.maps.Marker({
           position: new google.maps.LatLng(<%=town.latitude%>,<%=town.longitude%>),
           map: map,
-          <% if (instagram_users && visits.any?) or (!instagram_users && other_visits.any?) %>
+          <% if (instagram_user && visits.any?) or (!instagram_user && other_visits.any?) %>
           icon: 'assets/markers/blue_MarkerX.png',
           <% else %>
           icon: 'assets/markers/red_MarkerX.png',
