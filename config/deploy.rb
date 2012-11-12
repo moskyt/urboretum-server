@@ -23,3 +23,10 @@ set :deploy_to, "/home/moskyt/urboretum"
 task :events do
   run "cd #{current_path}; bundle exec rake events:build RAILS_ENV=production"
 end
+
+namespace :deploy do
+  desc "Restart Application"
+  task :restart, :roles => :app do
+    run "touch #{current_path}/tmp/restart.txt"
+  end
+end
