@@ -1,19 +1,21 @@
 UrboretumServer::Application.routes.draw do
   devise_for :users
-  
+
   resources :towns do
     collection do
       get :map
     end
   end
-  
+
   root :to => 'towns#map'
-  
+
   get "/oauth/connect" => 'instagram#connect', :as => :connect
   get "/oauth/callback" => 'instagram#callback'
   get "/oauth/logout" => 'instagram#logout', :as => :logout
-  
+
   get "/fetch" => 'instagram#fetch', :as => :fetch
+  get "/resolve" => 'instagram#resolve', :as => :resolve
+  post "/resolve" => 'instagram#resolve', :as => :resolve
 
 
   # The priority is based upon order of creation:
