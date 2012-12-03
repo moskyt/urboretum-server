@@ -25,7 +25,7 @@ class InstagramController < ApplicationController
         thumbnail_url = params[:thumbnail_url][media_id]
         timestamp = Time.zone.parse(params[:timestamp][media_id])
 
-        media_id = media_id.to_i
+        media_id = media_id
         town_id = town_id.to_i
         town = Town.find(town_id)
 
@@ -100,6 +100,8 @@ class InstagramController < ApplicationController
           else
             unless visit
               @to_be_resolved << [caption, entry.id, media.images.standard_resolution.url, media.images.thumbnail.url, Time.at(entry.created_time.to_i)]
+            else
+              @log << ["", visit.town.name, "", "(-)", visit.timestamp.strftime("%.d. %m. %Y")]
             end
           end
         end
