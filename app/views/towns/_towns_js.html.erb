@@ -1,0 +1,61 @@
+<script>
+  $(function(){
+
+    var mapOptions = {
+      center: new google.maps.LatLng(49.75, 14.80),
+      zoom: 9,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map"),
+        mapOptions);
+
+    var open_info_window = null;
+
+    <% Town.all.each do |town| %>
+      <%
+        visits = instagram_user ? town.visits.by(instagram_user.username) : []
+        other_visits = town.visits - visits
+      %>
+      var marker<%=town.id%> = new google.maps.Marker({
+          position: new google.maps.LatLng(<%=town.latitude%>,<%=town.longitude%>),
+          map: map,
+          <% if (instagram_user && visits.any?) or (!instagram_user && other_visits.any?) %>
+          icon: 'assets/markers/blue_MarkerX.png',
+          <% else %>
+          icon: 'assets/markers/red_MarkerX.png',
+          <% end %>
+          title:"<%= town.name %>"
+      });
+
+      contentString =
+        '<div class="town_info_window">'
+        + '<span class="title"><%= town.name %></span>'
+        <% unless town.wikiref.blank? %>
+        + ' <%= link_to "(wiki)", town.wikiref %>'
+        <% end %>
+        + '<br />okres <%= town.department %><br />'
+        <% visits.each do |visit| %>
+        + '<br /> <%= visit.timestamp.strftime("%d. %m. %Y") %><br /><%= link_to_function image_tag(visit.thumbnail_url, :size => '150x150'), "Shadowbox.open({player:\\'img\\',content:\\'#{visit.image_url}\\',height: 612,width:612 });"%>'
+        <% end %>
+        + '<br />'
+        <% other_visits.each do |visit| %>
+        + '<%= link_to_function image_tag(visit.thumbnail_url, :size => '64x64'), "Shadowbox.open({player:\\'img\\',content:\\'#{visit.image_url}\\',height: 612,width:612 });"%>'
+        <% end %>
+        + '</div>';
+
+      var infowindow<%=town.id%> = new google.maps.InfoWindow({
+          content: contentString
+      });
+
+      google.maps.event.addListener(marker<%=town.id%>, 'click', function() {
+        if (open_info_window) { open_info_window.close(); }
+        if (open_info_window == infowindow<%=town.id%>) {
+          open_info_window = null;
+        } else {
+          infowindow<%=town.id%>.open(map,marker<%=town.id%>);
+          open_info_window = infowindow<%=town.id%>;
+        }
+      });
+    <% end %>
+  });
+</script>

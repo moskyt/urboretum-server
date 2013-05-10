@@ -1,0 +1,24 @@
+<% self.formats = [:mobile, :html] %>
+
+<div id="box">
+  <ul>
+    <li style="font-weight:bold"><span style="color:#f00">URBORETUM</span></li>
+    <% if !instagram_user %>
+      <li><%= link_to "přihlásit", connect_path %></li>
+    <% else %>
+      <li> Navštíveno <%= Town.visited_by(instagram_user.username).size.size %> / <%= Town.count %> </li>
+    <% end %>
+  </ul>
+
+  <% if instagram_user %>
+  <br />
+    <ul>
+    <li><%= instagram_user.username %></li>
+    <li><%= link_to 'načíst', fetch_path %></li>
+    <li><%= link_to 'odhlásit', logout_path %></li>
+    </ul>
+  <% else %>
+  <% end %>
+</div>
+
+<%= render :partial => 'towns_js' %>

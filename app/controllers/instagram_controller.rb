@@ -104,6 +104,8 @@ class InstagramController < ApplicationController
           end
         end
       end
+
+      puts @to_be_resolved.inspect
     else
       render :text => 'boo'
     end
