@@ -25,7 +25,7 @@ class InstagramController < ApplicationController
         thumbnail_url = params[:thumbnail_url][media_id]
         timestamp = Time.zone.parse(params[:timestamp][media_id])
 
-        media_id = media_id.to_i
+        media_id = media_id
         town_id = town_id.to_i
         town = Town.find(town_id)
 
@@ -34,18 +34,13 @@ class InstagramController < ApplicationController
           :media_id => media_id,
           :town_id => town.id,
         }
-        visit = Visit.where(constraints).first || Visit.create(constraints)
+        visit = Visit.where(constraints).first
         @log <<
           [
             visit ? "" : "(+)",
             town.name,
             timestamp.strftime("%d. %m. %Y"),
           ]
-        constraints = {
-          :username => @instagram_user.username,
-          :media_id => media_id,
-          :town_id => town.id,
-        }
         visit ||= Visit.create(constraints)
         visit.update_attributes(
           :image_url => image_url,
@@ -100,6 +95,8 @@ class InstagramController < ApplicationController
           else
             unless visit
               @to_be_resolved << [caption, entry.id, media.images.standard_resolution.url, media.images.thumbnail.url, Time.at(entry.created_time.to_i)]
+            else
+              @log << ["", visit.town.name, "", "(-)", visit.timestamp.strftime("%.d. %m. %Y")]
             end
           end
         end
