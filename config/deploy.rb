@@ -4,12 +4,13 @@ load 'deploy/assets'
 set :application, "urboretum"
 
 set :scm, :git
-set :repository, "git://github.com/moskyt/urboretum-server.git"
-set :branch, "master"
+# set :repository, "git://github.com/moskyt/urboretum-server.git"
+set :repository, "git@github.com:moskyt/urboretum-server.git"  # Your clone URL
+# set :branch, "master"
 
-# set :repository_cache, "git_cache"
-# set :deploy_via, :remote_cache
-set :git_shallow_clone, 1
+set :repository_cache, "git_cache"
+set :deploy_via, :remote_cache
+set :git_shallow_clone, 0
 set :ssh_options, { :forward_agent => true }
 set :user, 'moskyt'
 set :use_sudo, false
