@@ -1,0 +1,21 @@
+%h1 Instagram [@#{instagram_user.username}]
+
+%table
+  - @log.each do |line|
+    %tr
+      = (line.map{|s| "<td>#{s}</td>".html_safe} * "\n".html_safe).html_safe
+
+- unless @to_be_resolved.blank?
+  = form_tag resolve_path do
+    %table
+      - @to_be_resolved.each do |caption, media_id, image_url, thumbnail_url, timestamp|
+        %tr
+          %td= caption
+          %td= media_id
+          %td= select_tag "town_id[#{media_id}]", options_from_collection_for_select(Town.all, :id, :name)
+          = hidden_field_tag "image_url[#{media_id}]", image_url
+          = hidden_field_tag "thumbnail_url[#{media_id}]", thumbnail_url
+          = hidden_field_tag "timestamp[#{media_id}]", timestamp
+    = submit_tag "Uložit"
+
+%p= link_to 'Zpět na mapu', :root
