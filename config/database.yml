@@ -23,6 +23,6 @@ production:
   database: urboretum
   encoding: utf8
   username: root
-  password: root
+  password:
   pool: 5
   timeout: 5000
