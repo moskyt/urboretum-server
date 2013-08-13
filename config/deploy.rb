@@ -1,4 +1,5 @@
 require "bundler/capistrano"
+require "capistrano/mysqldump"
 load 'deploy/assets'
 
 set :application, "urboretum"

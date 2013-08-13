@@ -1,6 +1,8 @@
 <% if instagram_user %>
   <div id="box">
-    Navštíveno <%= Town.visited_by(instagram_user.username).size.size %> z <%= Town.count %> měst
+    Navštíveno <%= Town.fully_visited_by(instagram_user.username).size.size %> 
+    (<%= Town.visited_by(instagram_user.username).size.size %>) 
+    z <%= Town.count %> měst
   </div>
 <% end %>
 

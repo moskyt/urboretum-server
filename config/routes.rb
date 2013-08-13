@@ -5,6 +5,9 @@ UrboretumServer::Application.routes.draw do
     collection do
       get :map
     end
+    member do 
+      post :mark
+    end
   end
 
   root :to => 'towns#map'

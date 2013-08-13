@@ -5,6 +5,7 @@ class Town < ActiveRecord::Base
   has_many :visits
   
   scope :visited_by, lambda{|username| joins(:visits).where('visits.username = ?', username).group('towns.id')}
+  scope :fully_visited_by, lambda{|username| joins(:visits).where('visits.media_id IS NOT NULL AND visits.username = ?', username).group('towns.id')}
   
   def self.locate(latitude, longitude)
     min = nil
