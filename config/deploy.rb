@@ -31,4 +31,7 @@ namespace :deploy do
   task :restart, :roles => :app do
     run "touch #{current_path}/tmp/restart.txt"
   end
+  task :kwikfix do
+    run "cd #{current_path}; git pull origin master; touch #{current_path}/tmp/restart.txt"
+  end
 end
