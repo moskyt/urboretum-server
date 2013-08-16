@@ -17,7 +17,7 @@ UrboretumServer::Application.configure do
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false
 
-  config.assets.precompile += %w( *.css *.js )
+  config.assets.precompile += %w(application.css application.js map.css map.js application.iphone.css application.iphone.js map.iphone.css map.iphone.js )
 
   # Generate digests for assets URLs
   config.assets.digest = true

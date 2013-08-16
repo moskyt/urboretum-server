@@ -2,13 +2,11 @@
 <html>
 <head>
 <title>Urboretum</title>
-  <%= stylesheet_link_tag    "application.iphone", :media => "all" %>
   <%= stylesheet_link_tag    "map.iphone", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "map" %>
   <%= csrf_meta_tags %>
 
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-
 
   <script src="http://maps.googleapis.com/maps/api/js?sensor=true&key=AIzaSyADJv1v8oj7ePv6q8H8he1zwbZtXgrfcek" type="text/javascript"></script>
   <!-- Make the document body take up the full screen -->
@@ -17,14 +15,6 @@
     html, body {width: 100%; height: 100%}
     body {margin-top: 0px; margin-right: 0px; margin-left: 0px; margin-bottom: 0px}
   </style>
-
-  <%= javascript_include_tag "shadowbox" %>
-  <%= stylesheet_link_tag    "shadowbox", :media => "all" %>
-  <script type="text/javascript">
-  Shadowbox.init({
-      skipSetup: true,
-      handleOversize: "drag"  });
-  </script>
 
 </head>
 <body>

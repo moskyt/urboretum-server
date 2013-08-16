@@ -3,7 +3,7 @@
 
 %div#box_menu
   %ul
-    %li(style="font-weight:bold")= link_to "URBORETUM", "public#info", :style => "color:#f00"
+    %li(style="font-weight:bold")= link_to "URBORETUM", info_path, :style => "color:#f00"
     - if instagram_user
       %li= instagram_user.username
       %li= link_to 'načíst', fetch_path

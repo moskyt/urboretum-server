@@ -5,12 +5,14 @@ UrboretumServer::Application.routes.draw do
     collection do
       get :map
     end
-    member do 
+    member do
       post :mark
     end
   end
 
   root :to => 'towns#map'
+
+  get "/info" => "public#info", :as => :info
 
   get "/oauth/connect" => 'instagram#connect', :as => :connect
   get "/oauth/callback" => 'instagram#callback'

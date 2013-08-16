@@ -20,11 +20,11 @@
           position: new google.maps.LatLng(<%=town.latitude%>,<%=town.longitude%>),
           map: map,
           <% if (instagram_user && visits.any?)  %>
-          icon: 'assets/markers/blue_MarkerX.png',
+          icon: '/assets/markers/blue_MarkerX.png',
           <% elsif (instagram_user && other_visits.any?) %>
-          icon: 'assets/markers/paleblue_MarkerX.png',
+          icon: '/assets/markers/paleblue_MarkerX.png',
           <% else %>
-          icon: 'assets/markers/red_MarkerX.png',
+          icon: '/assets/markers/red_MarkerX.png',
           <% end %>
           title:"<%= town.name %>"
       });

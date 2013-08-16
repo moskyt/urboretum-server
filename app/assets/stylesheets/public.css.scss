@@ -1,3 +1,31 @@
-// Place all the styles related to the public controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#wrapper {
+  width:980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: auto;
+}
+
+#header {
+  width: 980px;
+  padding-bottom:20px;
+}
+
+#menu {
+  width:200px;
+  float:left;
+  ul {
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+    li {
+      padding-bottom:0.5em;
+    }
+  }
+}
+
+#content {
+  width: 780px;
+  float:left;
+}
