@@ -1,0 +1,9 @@
+%p
+  %strong= visit.town.name
+  - unless visit.town.wikiref.blank?
+    = link_to "(wiki)", visit.town.wikiref
+
+- if visit.media_id
+  %p= link_to_function image_tag(visit.thumbnail_url, :size => '150x150'), "Shadowbox.open({player:\\'img\\',content:\\'#{visit.image_url}\\',height: 612,width:612 });"
+- else
+  (...)

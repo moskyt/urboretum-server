@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
     if session[:access_token]
       @instagram_client = Instagram.client(:access_token => session[:access_token]) rescue nil
       if @instagram_client
-        @instagram_user = @instagram_client.user
+        @instagram_user = @instagram_client.user rescue nil
       end
     end
   end

@@ -1,0 +1,125 @@
+/* line 1, ../../app/assets/stylesheets/shared.css.scss */
+body, html {
+  font-family: Verdana, sans-serif;
+  font-size: 11px;
+  color: black;
+}
+
+/* line 7, ../../app/assets/stylesheets/shared.css.scss */
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #d00;
+}
+
+/* line 13, ../../app/assets/stylesheets/shared.css.scss */
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 18, ../../app/assets/stylesheets/shared.css.scss */
+table.nice {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* line 23, ../../app/assets/stylesheets/shared.css.scss */
+table.nice td, table.nice th {
+  border: 1px solid black;
+  padding: 3px;
+  margin: 0px;
+}
+
+/* line 29, ../../app/assets/stylesheets/shared.css.scss */
+table.nice th {
+  text-align: left;
+  background-color: #D8E2FF;
+}
+/* line 1, ../../app/assets/stylesheets/public.css.scss */
+#wrapper {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: auto;
+}
+
+/* line 10, ../../app/assets/stylesheets/public.css.scss */
+#header {
+  width: 980px;
+  padding-bottom: 20px;
+}
+
+/* line 15, ../../app/assets/stylesheets/public.css.scss */
+#menu {
+  width: 200px;
+  float: left;
+}
+/* line 18, ../../app/assets/stylesheets/public.css.scss */
+#menu ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+/* line 22, ../../app/assets/stylesheets/public.css.scss */
+#menu ul li {
+  padding-bottom: 0.5em;
+}
+
+/* line 28, ../../app/assets/stylesheets/public.css.scss */
+#content {
+  width: 780px;
+  float: left;
+}
+
+/* line 33, ../../app/assets/stylesheets/public.css.scss */
+h1, h2, h3 {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+/* line 38, ../../app/assets/stylesheets/public.css.scss */
+h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 43, ../../app/assets/stylesheets/public.css.scss */
+h2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 48, ../../app/assets/stylesheets/public.css.scss */
+h3 {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* line 53, ../../app/assets/stylesheets/public.css.scss */
+div + h1, div + h2, div + h3 {
+  margin-top: 1em;
+}
+
+/* line 57, ../../app/assets/stylesheets/public.css.scss */
+p + p {
+  margin-top: 8px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+
+ */
+
+

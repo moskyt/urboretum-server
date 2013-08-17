@@ -1,5 +1,10 @@
 UrboretumServer::Application.routes.draw do
-  devise_for :users
+
+  resources :users, :only => [:index, :show] do
+    member do
+      get :map
+    end
+  end
 
   resources :towns do
     collection do
@@ -9,6 +14,8 @@ UrboretumServer::Application.routes.draw do
       post :mark
     end
   end
+
+  resources :visits, :only => :show
 
   root :to => 'towns#map'
 

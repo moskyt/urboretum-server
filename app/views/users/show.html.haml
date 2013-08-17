@@ -1,0 +1,29 @@
+%h1 Cestovatel #{@user.username}
+
+:javascript
+  window.open_department = 0;
+  window.open_visit = 0;
+  function openVisit(visit_id, department_i) {
+    if ((window.open_department > 0) && (department_i != window.open_department)) {
+      $("#district_" + window.open_department).hide();
+    }
+    if (window.open_visit != visit_id) {
+      window.open_department = department_i;
+      window.open_visit = visit_id;
+      $("#district_" + window.open_department).show();
+      $("#district_" + window.open_department).html('#{image_tag 'loading.gif'}');
+      $.get("/visits/" + visit_id + "?target=district_" + department_i);
+    } else {
+      $("#district_" + window.open_department).hide();
+      window.open_department = 0;
+      window.open_visit = 0;
+    }
+  }
+
+- Town.departments.each_with_index do |d, di|
+  - towns = Town.in(d)
+  - visits = @user.visits.joins(:town).where('towns.id' => towns.map(&:id))
+  - if visits.any?
+    %h2 Okres #{d}
+    %p= (visits.map{|v| link_to_function(v.media_id ? v.town.name : "(#{v.town.name})", "openVisit(#{v.id}, #{di})")} * ", ").html_safe
+    %div{:id => "district_#{di}", :style => "display:none;padding:4px;border:1px solid black;width:400px;margin-bottom:10px;margin-top:10px"}

@@ -13,8 +13,8 @@
 
     <% Town.all.each do |town| %>
       <%
-        visits = instagram_user ? town.visits.by(instagram_user.username).where('media_id IS NOT NULL') : []
-        other_visits = instagram_user ? town.visits.by(instagram_user.username).where('media_id IS NULL') : []
+        visits = username ? town.visits.by(username).where('media_id IS NOT NULL') : []
+        other_visits = username ? town.visits.by(username).where('media_id IS NULL') : []
       %>
       window.marker<%=town.id%> = new google.maps.Marker({
           position: new google.maps.LatLng(<%=town.latitude%>,<%=town.longitude%>),

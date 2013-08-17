@@ -1,0 +1,6 @@
+= render :partial => 'towns/towns_js', :locals => {:username => @user.username}
+
+%div#box_menu
+  %ul
+    %li(style="font-weight:bold")= link_to "URBORETUM", info_path, :style => "color:#f00"
+    %li mapa uživatele #{@user.username}

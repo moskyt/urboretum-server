@@ -11,6 +11,22 @@ a {
 }
 
 p {
-  margin-top: 0px;
-  padding-top: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+table.nice {
+  width:100%;
+  border-collapse: collapse;
+}
+
+table.nice td, table.nice th {
+  border:1px solid black;
+  padding:3px;
+  margin: 0px;
+}
+
+table.nice th {
+  text-align:left;
+  background-color:#D8E2FF;
 }
