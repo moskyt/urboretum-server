@@ -8,11 +8,12 @@
       %th
   %tbody
     - User.all.each do |u|
-      %td= u.username
-      %td
-        = u.n_true_visited
-        = surround '(', ')' do
-          = u.n_visited
-      %td
-        = link_to "[seznam]", user_path(u)
-        = link_to "[mapa]", map_user_path(u)
+      %tr
+        %td= u.username
+        %td
+          = u.n_true_visited
+          = surround '(', ')' do
+            = u.n_visited
+        %td
+          = link_to "[seznam]", user_path(u)
+          = link_to "[mapa]", map_user_path(u)

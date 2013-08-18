@@ -15,7 +15,7 @@ class User
   end
 
   def true_visits
-    Visit.by(@username)
+    Visit.by(@username).where('media_id IS NOT NULL')
   end
 
   def n_visited
