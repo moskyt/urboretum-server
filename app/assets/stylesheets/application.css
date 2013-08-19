@@ -10,6 +10,7 @@
  *
  *= require shared
  *= require public
+ *= require colorbox-rails
  *= require_self
  */
 

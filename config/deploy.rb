@@ -3,6 +3,7 @@ require "capistrano/mysqldump"
 load 'deploy/assets'
 
 set :application, "urboretum"
+set :mysqldump_bin, "mysqldump"
 
 set :scm, :git
 # set :repository, "git://github.com/moskyt/urboretum-server.git"

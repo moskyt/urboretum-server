@@ -4,6 +4,10 @@ class UsersController < ApplicationController
     @user = User.new(params[:id])
   end
 
+  def album
+    @user = User.new(params[:id])
+  end
+
   def map
     @user = User.new(params[:id])
     render :layout => 'map'

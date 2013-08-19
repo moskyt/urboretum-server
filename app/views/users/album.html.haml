@@ -1,0 +1,12 @@
+%h1 Album cestovatele #{@user.username}
+
+- unless @user.true_visits.any?
+  %p Cestovatel #{@user.username} zatím nemá žádné fotografie.
+- else
+  %div(style="overflow:auto;")
+    - @user.true_visits.each do |v|
+      %div(style="float:left")
+        %div(style="width:150px;height:150px")
+          %div{:id => "inner_#{v.id}", :style => "display:none"}
+            = link_to image_tag(v.image_url, :size => '150x150', :alt => v.town.name,  :onload => "$('#inner_#{v.id}').fadeIn(100)"), v.image_url, :rel => 'group', :title => v.town.name, :data => {:colorbox_static  => true}
+    %p
