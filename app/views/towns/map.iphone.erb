@@ -21,4 +21,4 @@
   <% end %>
 </div>
 
-<%= render :partial => 'towns_js' %>
+<%= render :partial => 'towns_js', :locals => {:username => instagram_user && instagram_user.username} %>
