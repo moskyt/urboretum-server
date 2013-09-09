@@ -12,10 +12,12 @@ class TownsController < ApplicationController
     @x_guess = session[:x_guess] ||= []
     @x_good  = session[:x_good] ||= []
     
-    random_visit = Visit.with_image.where('town_id NOT IN (?)', @x_good).random.first
+    random_visit = Visit.with_image
+    random_visit = random_visit.where('town_id NOT IN (?)', @x_good) unless @x_good.empty?
+    random_visit = random_visit.random.first
     
     if params[:id]
-      @visit = (params[:id] == 0) ? nil : Visit.find(params[:id])
+      @visit = (params[:id].to_i == 0) ? nil : Visit.find(params[:id])
       @town = @visit.town
       
       if params[:guess_id]
