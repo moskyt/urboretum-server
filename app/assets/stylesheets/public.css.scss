@@ -58,3 +58,22 @@ p + p {
   margin-top: 8px;
 }
 
+p.guess_status, p.good_guess, p.bad_guess {
+  width:400px;
+  padding:1em;
+  border:1px solid black;
+  margin-bottom:1em;
+}
+
+p.good_guess {
+  background-color:#dfd;
+  border-color:#0f0;
+}
+p.bad_guess {
+  background-color:#fdd;
+  border-color:#f00;
+  }
+p.guess_status {
+  background-color:#ddf;
+  border-color:#00f;
+}

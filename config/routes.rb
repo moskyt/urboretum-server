@@ -10,8 +10,10 @@ UrboretumServer::Application.routes.draw do
   resources :towns do
     collection do
       get :map
+      get :guess
     end
     member do
+      get :guess
       post :mark
     end
   end

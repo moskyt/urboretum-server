@@ -6,7 +6,7 @@
     <% if !instagram_user %>
       <li><%= link_to "přihlásit", connect_path %></li>
     <% else %>
-      <li> Navštíveno <%= Town.visited_by(instagram_user.username).size.size %> / <%= Town.count %> </li>
+      <li> Navštíveno <%= Town.fully_visited_by(instagram_user.username).size.size%> (<%= Town.visited_by(instagram_user.username).size.size%>) / <%= Town.count%> </li>
     <% end %>
   </ul>
 
