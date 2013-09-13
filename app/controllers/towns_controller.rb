@@ -17,8 +17,8 @@ class TownsController < ApplicationController
     random_visit = random_visit.random.first
     
     if params[:id]
-      @visit = (params[:id].to_i == 0) ? nil : Visit.find(params[:id])
-      @town = @visit.town
+      @visit = (!params[:id] or params[:id].to_i == 0) ? nil : Visit.find(params[:id])
+      @town = @visit.town if @visit
       
       if params[:guess_id]
         @guess_town = Town.find(params[:guess_id])
