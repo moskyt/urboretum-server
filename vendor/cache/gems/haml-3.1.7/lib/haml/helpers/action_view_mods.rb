@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ActionView
   class Base
     def render_with_haml(*args, &block)

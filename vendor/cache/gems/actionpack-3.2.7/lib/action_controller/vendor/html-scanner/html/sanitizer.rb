@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'set'
 require 'cgi'
 require 'active_support/core_ext/class/attribute'

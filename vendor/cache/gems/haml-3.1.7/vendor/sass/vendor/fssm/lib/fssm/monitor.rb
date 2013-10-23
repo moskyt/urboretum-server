@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class FSSM::Monitor
   def initialize(options={})
     @options = options

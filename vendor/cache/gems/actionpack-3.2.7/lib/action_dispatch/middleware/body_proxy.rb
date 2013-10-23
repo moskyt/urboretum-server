@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # Keep this file meanwhile https://github.com/rack/rack/pull/313 is not released
 module ActionDispatch
   class BodyProxy

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # A normal module, like NormalClass
 

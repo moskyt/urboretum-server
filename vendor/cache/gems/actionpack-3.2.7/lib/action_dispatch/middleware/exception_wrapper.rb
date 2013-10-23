@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'action_controller/metal/exceptions'
 require 'active_support/core_ext/exception'
 

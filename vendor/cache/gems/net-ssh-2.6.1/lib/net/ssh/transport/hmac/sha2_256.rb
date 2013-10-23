@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'net/ssh/transport/hmac/abstract'
 
 if defined?(OpenSSL::Digest::SHA256) # need openssl support

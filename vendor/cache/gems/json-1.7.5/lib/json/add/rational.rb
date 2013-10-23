@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 unless defined?(::JSON::JSON_LOADED) and ::JSON::JSON_LOADED
   require 'json'
 end

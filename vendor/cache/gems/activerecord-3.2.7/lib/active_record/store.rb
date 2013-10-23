@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ActiveRecord
   # Store gives you a thin wrapper around serialize for the purpose of storing hashes in a single column.
   # It's like a simple key/value store backed into your record when you don't care about being able to

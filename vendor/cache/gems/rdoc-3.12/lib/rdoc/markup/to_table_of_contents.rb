@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # Extracts just the RDoc::Markup::Heading elements from a
 # RDoc::Markup::Document to help build a table of contents

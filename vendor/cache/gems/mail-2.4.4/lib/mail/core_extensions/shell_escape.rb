@@ -1,4 +1,4 @@
-# encoding: utf-8
+# -*- encoding : utf-8 -*-
 
 # The following is an adaptation of ruby 1.9.2's shellwords.rb file,
 # it is modified to include '+' in the allowed list to allow for

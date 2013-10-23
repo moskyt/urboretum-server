@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # tc_style.rb
 #
 #  Created by Richard LeBer on 2011-06-11.

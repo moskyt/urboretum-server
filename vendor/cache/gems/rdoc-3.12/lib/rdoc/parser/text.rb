@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # Indicates this parser is text and doesn't contain code constructs.
 #

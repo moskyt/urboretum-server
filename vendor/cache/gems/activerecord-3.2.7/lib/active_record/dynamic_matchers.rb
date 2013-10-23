@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ActiveRecord
   module DynamicMatchers
     def respond_to?(method_id, include_private = false)

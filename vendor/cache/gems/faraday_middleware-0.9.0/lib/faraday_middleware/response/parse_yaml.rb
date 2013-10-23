@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'faraday_middleware/response_middleware'
 
 module FaradayMiddleware

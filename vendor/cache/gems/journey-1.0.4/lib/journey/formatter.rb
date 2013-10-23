@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Journey
   ###
   # The Formatter class is used for formatting URLs.  For example, parameters

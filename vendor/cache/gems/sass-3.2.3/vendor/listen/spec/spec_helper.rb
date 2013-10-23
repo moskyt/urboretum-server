@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'listen'
 
 ENV["TEST_LATENCY"] ||= "0.25"

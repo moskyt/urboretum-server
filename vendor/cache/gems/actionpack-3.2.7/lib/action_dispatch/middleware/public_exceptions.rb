@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ActionDispatch
   # A simple Rack application that renders exceptions in the given public path.
   class PublicExceptions

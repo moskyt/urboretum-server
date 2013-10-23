@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module MultiJson
   class DecodeError < StandardError
     attr_reader :data

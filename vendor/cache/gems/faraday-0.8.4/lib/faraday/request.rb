@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Faraday
   # Used to setup urls, params, headers, and the request body in a sane manner.
   #

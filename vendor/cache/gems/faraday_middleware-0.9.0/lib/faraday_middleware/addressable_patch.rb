@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'addressable/uri'
 
 # feature-detect the bug

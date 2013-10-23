@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module FSSM::State
   class Directory
     attr_reader :path

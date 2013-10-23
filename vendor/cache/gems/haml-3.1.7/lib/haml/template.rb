@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'haml/template/options'
 require 'haml/engine'
 require 'haml/helpers/action_view_mods'

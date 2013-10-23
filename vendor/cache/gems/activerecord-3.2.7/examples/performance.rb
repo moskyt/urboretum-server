@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 TIMES = (ENV['N'] || 10000).to_i
 
 require File.expand_path('../../../load_paths', __FILE__)

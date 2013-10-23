@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'journey/nfa/transition_table'
 require 'journey/gtg/transition_table'
 

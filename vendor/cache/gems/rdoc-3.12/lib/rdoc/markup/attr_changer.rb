@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class RDoc::Markup
 
   AttrChanger = Struct.new :turn_on, :turn_off # :nodoc:

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # This file makes Haml work with Rails
 # using the > 2.0.1 template handler API.
 

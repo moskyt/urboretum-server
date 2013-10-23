@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # -*- ruby encoding: utf-8 -*-
 
 # The namespace for MIME applications, tools, and libraries.

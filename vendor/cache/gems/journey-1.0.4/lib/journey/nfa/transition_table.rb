@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'journey/nfa/dot'
 
 module Journey

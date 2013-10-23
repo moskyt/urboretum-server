@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 Haml::Util.try_sass
 Haml::Util.haml_warn(<<WARNING)
 Haml will no longer automatically load Sass in Haml 3.2.0.

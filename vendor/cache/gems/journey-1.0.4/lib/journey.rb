@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'journey/router'
 require 'journey/gtg/builder'
 require 'journey/gtg/simulator'

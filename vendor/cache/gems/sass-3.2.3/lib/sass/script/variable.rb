@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Sass
   module Script
     # A SassScript parse node representing a variable.

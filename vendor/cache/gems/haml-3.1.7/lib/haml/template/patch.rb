@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # This file makes Haml work with Rails
 # by monkeypatching the core template-compilation methods.
 # This is necessary for versions <= 2.0.1 because the template handler API

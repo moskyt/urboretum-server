@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Town < ActiveRecord::Base
 
   attr_accessible :department, :wikiref, :latitude, :longitude, :image_url, :name

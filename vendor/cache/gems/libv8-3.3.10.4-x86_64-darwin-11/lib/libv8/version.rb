@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Libv8
   version_file = File.join(File.dirname(__FILE__), 'VERSION')
   V8_VERSION = File.exist?(version_file) ? File.read(version_file).chomp : "0.0"

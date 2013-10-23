@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'rack/auth/basic'
 require 'rack/lint'
 require 'rack/mock'

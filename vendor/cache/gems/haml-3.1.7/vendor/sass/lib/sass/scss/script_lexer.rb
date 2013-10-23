@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Sass
   module SCSS
     # A mixin for subclasses of {Sass::Script::Lexer}

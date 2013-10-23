@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class InheritedHashHandler < YARD::Handlers::Ruby::Legacy::Base
   handles /\Ainherited_hash(\s|\()/
 

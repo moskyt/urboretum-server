@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # Adapter watch
 #
 # @param [Listen::Listener] listener the adapter listener

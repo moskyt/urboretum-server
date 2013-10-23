@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Faraday
   class Response::RaiseError < Response::Middleware
     def on_complete(env)

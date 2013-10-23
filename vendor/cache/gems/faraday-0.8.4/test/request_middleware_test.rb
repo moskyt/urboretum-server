@@ -1,4 +1,4 @@
-# encoding: utf-8
+# -*- encoding : utf-8 -*-
 require File.expand_path(File.join(File.dirname(__FILE__), 'helper'))
 
 Faraday::CompositeReadIO.class_eval { attr_reader :ios }

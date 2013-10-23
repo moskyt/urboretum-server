@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'openssl'
 require 'net/ssh/transport/ctr.rb'
 require 'net/ssh/transport/key_expander'

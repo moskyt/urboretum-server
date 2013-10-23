@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # Add custom log formatters
 #
 # Passing a hash or a array of hashes with custom log formatters.

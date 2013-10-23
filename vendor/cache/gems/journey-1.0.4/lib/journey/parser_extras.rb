@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'journey/scanner'
 require 'journey/nodes/node'
 

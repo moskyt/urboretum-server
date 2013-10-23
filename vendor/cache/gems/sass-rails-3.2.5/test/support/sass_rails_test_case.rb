@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 unless defined?(Bundler)
   $stderr.puts "You didn't run bundle exec did you? Try again: bundle exec rake test"
   exit 1

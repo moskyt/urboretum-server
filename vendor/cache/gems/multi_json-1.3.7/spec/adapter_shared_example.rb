@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 shared_examples_for "an adapter" do |adapter|
 
   before do

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'json/version'
 require 'json/generic_object'
 

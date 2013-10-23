@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # A parser is simple a class that subclasses RDoc::Parser and implements #scan
 # to fill in an RDoc::TopLevel with parsed data.

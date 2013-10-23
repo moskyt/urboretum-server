@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Faraday
   class Adapter < Middleware
     CONTENT_LENGTH = 'Content-Length'.freeze

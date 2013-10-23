@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'rails'
 
 # Supply generator for Rails 3.0.x or if asset pipeline is not enabled

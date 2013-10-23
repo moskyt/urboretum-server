@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Object
   # Returns true if this object is included in the argument(s). Argument must be
   # any object which responds to +#include?+ or optionally, multiple arguments can be passed in. Usage:

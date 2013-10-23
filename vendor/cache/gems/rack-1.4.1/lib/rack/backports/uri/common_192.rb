@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # :stopdoc:
 
 # Stolen from ruby core's uri/common.rb @32618ba to fix DoS issues in 1.9.2

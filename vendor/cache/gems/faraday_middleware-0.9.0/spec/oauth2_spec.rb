@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'helper'
 require 'uri'
 require 'faraday_middleware/request/oauth2'

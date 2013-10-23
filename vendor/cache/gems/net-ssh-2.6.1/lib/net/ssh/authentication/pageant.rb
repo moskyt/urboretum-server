@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'dl/import'
 
 if RUBY_VERSION < "1.9"

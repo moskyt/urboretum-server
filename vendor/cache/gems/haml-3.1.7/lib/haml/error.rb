@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Haml
   # An exception raised by Haml code.
   class Error < StandardError

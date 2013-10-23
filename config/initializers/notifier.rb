@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 unless Rails.env.development?
 UrboretumServer::Application.config.middleware.use ExceptionNotification::Rack,
   :email => {

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'fileutils'
 
 unless Capistrano::Configuration.respond_to?(:instance)

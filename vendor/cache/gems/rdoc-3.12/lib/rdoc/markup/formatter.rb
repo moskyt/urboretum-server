@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # Base class for RDoc markup formatters
 #

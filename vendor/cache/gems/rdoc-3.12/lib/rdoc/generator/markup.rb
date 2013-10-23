@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 
 ##
 # Handle common RDoc::Markup tasks for various CodeObjects

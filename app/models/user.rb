@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class User
 
   attr_reader :username

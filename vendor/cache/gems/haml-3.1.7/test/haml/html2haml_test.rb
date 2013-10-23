@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 #!/usr/bin/env ruby
 require File.dirname(__FILE__) + '/../test_helper'
 require File.dirname(__FILE__) + '/html2haml/erb_tests'

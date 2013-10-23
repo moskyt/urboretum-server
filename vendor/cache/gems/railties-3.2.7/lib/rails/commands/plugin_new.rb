@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'rubygems' if ARGV.include?("--dev")
 
 if ARGV.first != "new"

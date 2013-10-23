@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Haml
   # This module contains various helpful methods to make it easier to do various tasks.
   # {Haml::Helpers} is automatically included in the context

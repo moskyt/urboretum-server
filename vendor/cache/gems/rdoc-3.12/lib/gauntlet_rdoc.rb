@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'rubygems'
 Gem.load_yaml
 require 'rdoc'

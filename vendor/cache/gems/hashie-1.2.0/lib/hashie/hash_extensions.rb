@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Hashie
   module HashExtensions
     def self.included(base)

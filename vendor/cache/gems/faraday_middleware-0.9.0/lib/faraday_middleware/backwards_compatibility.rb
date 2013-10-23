@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # deprecated constants
 
 Faraday::Request.class_eval do

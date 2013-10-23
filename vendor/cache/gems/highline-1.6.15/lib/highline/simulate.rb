@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # simulate.rb
 #
 #  Created by Andy Rossmeissl on 2012-04-29.

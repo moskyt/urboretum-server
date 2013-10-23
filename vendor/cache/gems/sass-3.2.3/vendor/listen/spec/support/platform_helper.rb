@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 def mac?
   RbConfig::CONFIG['target_os'] =~ /darwin/i
 end

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # Generates ri data files
 

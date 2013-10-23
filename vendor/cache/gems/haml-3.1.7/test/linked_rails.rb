@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # allows testing with edge Rails by creating a test/rails symlink
 linked_rails = File.dirname(__FILE__) + '/rails'
 

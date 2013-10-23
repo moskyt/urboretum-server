@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # This Markup outputter is used for testing purposes.
 

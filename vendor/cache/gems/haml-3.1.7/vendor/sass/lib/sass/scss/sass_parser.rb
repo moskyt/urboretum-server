@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Sass
   module SCSS
     # A subclass of {Parser} that parses code in Sass documents

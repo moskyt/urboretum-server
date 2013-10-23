@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # Prepares a record for the test and fetches changes
 # afterwards.
 #

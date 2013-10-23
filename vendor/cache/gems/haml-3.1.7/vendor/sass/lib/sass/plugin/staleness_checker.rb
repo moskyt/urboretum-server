@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Sass
   module Plugin
     # The class handles `.s[ca]ss` file staleness checks via their mtime timestamps.

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'oj' unless defined?(::Oj)
 
 module MultiJson

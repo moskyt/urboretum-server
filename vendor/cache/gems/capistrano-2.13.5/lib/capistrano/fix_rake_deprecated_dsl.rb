@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 #
 # See https://github.com/jimweirich/rake/issues/81
 #

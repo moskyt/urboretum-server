@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class VisitsController < ApplicationController
 
   skip_before_filter :get_instagram_user

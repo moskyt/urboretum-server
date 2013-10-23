@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'net/ssh/transport/server_version'
 
 # Only load pageant on Windows

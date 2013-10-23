@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # Hold details of a special sequence
 

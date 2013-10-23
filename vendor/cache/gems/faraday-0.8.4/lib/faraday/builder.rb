@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Faraday
   # Possibly going to extend this a bit.
   #

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # RDoc statistics collector which prints a summary and report of a project's
 # documentation totals.

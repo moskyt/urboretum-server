@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # RDoc::RD implements the RD format from the rdtool gem.
 #

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'capistrano/fix_rake_deprecated_dsl'
 
 require 'capistrano/configuration'

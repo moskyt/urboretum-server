@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 def jruby?
   defined?(RUBY_ENGINE) && RUBY_ENGINE == 'jruby'
 end

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # We keep configuration in its own self-contained file
 # so that we can load it independently in Rails 3,
 # where the full plugin stuff is lazy-loaded.

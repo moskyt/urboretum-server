@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'sass/script/node'
 require 'sass/script/variable'
 require 'sass/script/funcall'

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Faraday
   class Request::Retry < Faraday::Middleware
     def initialize(app, retries = 2)

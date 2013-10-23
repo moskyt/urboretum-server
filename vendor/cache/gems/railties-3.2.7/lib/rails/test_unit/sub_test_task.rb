@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Rails
   # Silence the default description to cut down on `rake -T` noise.
   class SubTestTask < Rake::TestTask

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # A TopLevel context is a representation of the contents of a single file
 

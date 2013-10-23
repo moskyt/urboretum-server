@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Listen
   # Allows two threads to wait on eachother.
   #

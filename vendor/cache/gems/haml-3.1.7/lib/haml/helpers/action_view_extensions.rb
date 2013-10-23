@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Haml
   module Helpers
     @@action_view_defined = true

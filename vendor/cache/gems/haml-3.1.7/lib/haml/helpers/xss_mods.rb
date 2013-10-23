@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Haml
   module Helpers
     # This module overrides Haml helpers to work properly

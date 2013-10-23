@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CallbacksHandler < YARD::Handlers::Ruby::Legacy::Base
   handles /\Adefine_callback(\s|\()/
 

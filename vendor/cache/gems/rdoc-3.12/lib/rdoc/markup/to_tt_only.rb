@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # Extracts sections of text enclosed in plus, tt or code.  Used to discover
 # undocumented parameters.

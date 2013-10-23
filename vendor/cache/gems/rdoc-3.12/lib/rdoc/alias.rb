@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # Represent an alias, which is an old_name/new_name pair associated with a
 # particular context

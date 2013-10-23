@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module JSON
   # JSON version
   VERSION         = '1.7.5'

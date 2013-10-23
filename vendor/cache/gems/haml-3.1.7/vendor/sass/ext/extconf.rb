@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 root = File.expand_path("../..", __FILE__)
 File.open(File.expand_path("lib/sass/root.rb", root), "w") do |f|
   f << <<-RUBY

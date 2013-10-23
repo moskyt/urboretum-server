@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require "abstract_controller/rendering"
 
 # Rails 3.2.3's form helpers add a newline after opening textareas, which can

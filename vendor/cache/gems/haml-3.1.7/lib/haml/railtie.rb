@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 if Haml::Util.ap_geq_3? && !Haml::Util.ap_geq?("3.0.0.beta4")
   raise <<ERROR
 Haml no longer supports Rails 3 versions before beta 4.

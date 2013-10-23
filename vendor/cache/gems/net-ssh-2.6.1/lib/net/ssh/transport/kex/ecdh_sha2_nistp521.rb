@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Net; module SSH; module Transport; module Kex
 
   # A key-exchange service implementing the "ecdh-sha2-nistp521"

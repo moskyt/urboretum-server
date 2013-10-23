@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Listen
   class MultiListener < Listener
     attr_reader :directories, :directories_records, :adapter

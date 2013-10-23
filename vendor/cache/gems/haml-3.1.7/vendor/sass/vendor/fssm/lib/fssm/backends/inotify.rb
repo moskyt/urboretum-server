@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module FSSM::Backends
   class Inotify
     def initialize

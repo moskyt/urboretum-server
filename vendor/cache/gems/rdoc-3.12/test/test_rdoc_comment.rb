@@ -1,4 +1,4 @@
-# coding: us-ascii
+# -*- encoding : utf-8 -*-
 
 require 'rdoc/test_case'
 

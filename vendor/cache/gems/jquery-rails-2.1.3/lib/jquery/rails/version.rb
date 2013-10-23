@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Jquery
   module Rails
     VERSION = "2.1.3"

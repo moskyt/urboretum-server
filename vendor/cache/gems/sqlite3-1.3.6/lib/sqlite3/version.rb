@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module SQLite3
 
   VERSION = '1.3.6'

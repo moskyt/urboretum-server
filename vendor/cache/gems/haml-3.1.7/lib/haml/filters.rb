@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Haml
   # The module containing the default Haml filters,
   # as well as the base module, {Haml::Filters::Base}.

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Hashie
   autoload :HashExtensions, 'hashie/hash_extensions'
   autoload :PrettyInspect, 'hashie/hash_extensions'

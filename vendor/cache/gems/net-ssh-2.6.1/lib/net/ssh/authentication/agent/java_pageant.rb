@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'jruby_pageant'
 
 module Net; module SSH; module Authentication

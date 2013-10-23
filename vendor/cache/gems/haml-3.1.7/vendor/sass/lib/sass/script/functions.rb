@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Sass::Script
   # Methods in this module are accessible from the SassScript context.
   # For example, you can write

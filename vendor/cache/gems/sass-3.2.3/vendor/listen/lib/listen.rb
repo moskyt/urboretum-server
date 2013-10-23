@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Listen
 
   autoload :Turnstile,       'listen/turnstile'

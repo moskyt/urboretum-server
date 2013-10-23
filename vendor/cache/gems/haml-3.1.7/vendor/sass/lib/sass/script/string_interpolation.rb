@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Sass::Script
   # A SassScript object representing `#{}` interpolation within a string.
   #

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'thread'
 require 'logger'
 require 'active_support/core_ext/logger'

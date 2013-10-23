@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Faraday
   VERSION = "0.8.4"
 

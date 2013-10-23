@@ -1,4 +1,4 @@
-# coding: US-ASCII
+# -*- encoding : utf-8 -*-
 
 ##
 # This class is a wrapper around File IO and Encoding that helps RDoc load

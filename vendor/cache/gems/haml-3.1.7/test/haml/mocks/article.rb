@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Article
   attr_accessor :id, :title, :body
   def initialize

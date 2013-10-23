@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'set'
 require 'sass/script/string'
 require 'sass/script/number'

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'sprockets/railtie'
 
 module Sass::Rails

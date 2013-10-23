@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Sprockets
   # `Caching` is an internal mixin whose public methods are exposed on
   # the `Environment` and `Index` classes.

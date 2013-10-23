@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'helper'
 require 'adapter_shared_example'
 require 'stringio'

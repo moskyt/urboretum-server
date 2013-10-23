@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 unless Rails.env.development?
   CALLBACK_URL = "http://urboretum.zemezamyslena.cz/oauth/callback"
 

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'rdoc/test_case'
 
 class TestRDocMarkupInclude < RDoc::TestCase

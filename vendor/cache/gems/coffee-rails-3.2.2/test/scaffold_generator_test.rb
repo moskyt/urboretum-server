@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'test_helper'
 require 'rails/generators/rails/scaffold/scaffold_generator'
 require 'rails/generators/coffee/assets/assets_generator'

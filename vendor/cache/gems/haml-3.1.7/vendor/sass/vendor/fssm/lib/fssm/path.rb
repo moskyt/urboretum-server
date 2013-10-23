@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class FSSM::Path
   def initialize(path=nil, glob=nil, options={}, &block)
     @options = options

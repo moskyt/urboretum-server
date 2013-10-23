@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 OSX.require_framework '/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework'
 
 module Rucola

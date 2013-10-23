@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 UrboretumServer::Application.routes.draw do
 
   resources :users, :only => [:index, :show] do

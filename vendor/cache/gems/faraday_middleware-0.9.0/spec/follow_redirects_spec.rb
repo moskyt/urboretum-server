@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'helper'
 require 'faraday_middleware/response/follow_redirects'
 require 'faraday'

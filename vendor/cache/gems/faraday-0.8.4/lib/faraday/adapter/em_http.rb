@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Faraday
   class Adapter
     # EventMachine adapter is useful for either asynchronous requests

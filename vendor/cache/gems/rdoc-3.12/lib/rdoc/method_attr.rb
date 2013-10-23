@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # Abstract class representing either a method or an attribute.
 

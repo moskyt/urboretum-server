@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'rake/dsl_definition'
 require 'rake/contrib/compositepublisher'
 

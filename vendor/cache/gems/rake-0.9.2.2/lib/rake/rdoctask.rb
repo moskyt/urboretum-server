@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # rake/rdoctask is deprecated in favor of rdoc/task
 
 if Rake.application

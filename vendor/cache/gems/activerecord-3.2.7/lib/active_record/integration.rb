@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ActiveRecord
   module Integration
     # Returns a String, which Action Pack uses for constructing an URL to this

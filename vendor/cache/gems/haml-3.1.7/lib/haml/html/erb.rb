@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'cgi'
 require 'erubis'
 require 'ruby_parser'

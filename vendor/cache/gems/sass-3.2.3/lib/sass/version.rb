@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'date'
 
 # This is necessary for loading Sass when Haml is required in Rails 3.

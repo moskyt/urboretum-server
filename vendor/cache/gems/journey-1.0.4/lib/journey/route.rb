@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Journey
   class Route
     attr_reader :app, :path, :verb, :defaults, :ip, :name

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'journey/gtg/transition_table'
 
 module Journey

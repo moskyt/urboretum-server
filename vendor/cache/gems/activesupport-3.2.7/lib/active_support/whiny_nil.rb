@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'active_support/deprecation'
 
 # Extensions to +nil+ which allow for more helpful error messages for people who

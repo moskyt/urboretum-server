@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'active_record/connection_adapters/abstract_mysql_adapter'
 
 gem 'mysql2', '~> 0.3.10'

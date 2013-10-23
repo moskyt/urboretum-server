@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 begin
   require 'net/https'
 rescue LoadError

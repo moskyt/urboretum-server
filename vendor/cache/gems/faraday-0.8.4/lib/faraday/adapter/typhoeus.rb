@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Faraday
   class Adapter
     class Typhoeus < Faraday::Adapter

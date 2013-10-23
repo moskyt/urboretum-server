@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'net/ssh/transport/kex/diffie_hellman_group_exchange_sha1'
 
 module Net::SSH::Transport::Kex

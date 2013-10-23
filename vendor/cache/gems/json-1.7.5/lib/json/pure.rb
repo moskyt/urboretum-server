@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 if ENV['SIMPLECOV_COVERAGE'].to_i == 1
   require 'simplecov'
   SimpleCov.start do

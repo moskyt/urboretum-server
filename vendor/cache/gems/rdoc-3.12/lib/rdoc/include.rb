@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # A Module include in a class with \#include
 

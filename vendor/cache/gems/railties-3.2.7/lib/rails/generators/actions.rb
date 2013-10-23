@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'open-uri'
 require 'rbconfig'
 require 'active_support/core_ext/array/wrap'

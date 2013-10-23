@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # Handle common directives that can occur in a block of text:
 #

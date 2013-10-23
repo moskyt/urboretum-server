@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # AnyMethod is the base class for objects representing methods
 

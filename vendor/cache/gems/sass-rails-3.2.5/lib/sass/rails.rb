@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Sass
   autoload :Script, 'sass/rails/helpers'
 

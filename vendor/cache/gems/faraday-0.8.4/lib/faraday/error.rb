@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Faraday
   module Error
     class ClientError < StandardError

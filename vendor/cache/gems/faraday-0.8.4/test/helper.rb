@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 unless ENV['CI']
   begin
     require 'simplecov'

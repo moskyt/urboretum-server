@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 shared_examples_for 'a listener to changes on a file-system' do
   describe '#start' do
     before do

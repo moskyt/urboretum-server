@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'common'
 require 'transport/hmac/test_sha2_256'
 require 'net/ssh/transport/hmac/sha2_256_96'

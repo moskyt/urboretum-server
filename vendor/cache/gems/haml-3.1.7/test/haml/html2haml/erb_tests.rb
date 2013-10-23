@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ErbTests
   def test_erb
     assert_equal '- foo = bar', render_erb('<% foo = bar %>')

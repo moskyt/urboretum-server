@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # Outputs RDoc markup with vibrant ANSI color!
 

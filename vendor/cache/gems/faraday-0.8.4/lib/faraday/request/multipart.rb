@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Faraday
   class Request::Multipart < Request::UrlEncoded
     self.mime_type = 'multipart/form-data'.freeze

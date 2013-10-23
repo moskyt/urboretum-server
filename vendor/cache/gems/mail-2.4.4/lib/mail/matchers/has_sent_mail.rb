@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Mail
   module Matchers
     def have_sent_email

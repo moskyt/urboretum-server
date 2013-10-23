@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # Outputs RDoc markup as paragraphs with inline markup only.
 

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # An array of attributes which parallels the characters in a string.
 

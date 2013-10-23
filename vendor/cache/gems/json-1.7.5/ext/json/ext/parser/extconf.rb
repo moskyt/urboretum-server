@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'mkmf'
 
 unless $CFLAGS.gsub!(/ -O[\dsz]?/, ' -O3')

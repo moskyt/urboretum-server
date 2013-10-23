@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Faraday
   class Request::UrlEncoded < Faraday::Middleware
     CONTENT_TYPE = 'Content-Type'.freeze

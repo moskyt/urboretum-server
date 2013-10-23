@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 unless Haml::Util.try_sass
   # Since Bundler sets up our gem environment,
   # Sass will only be loadable from gem

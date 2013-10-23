@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 ##
 # Test case for creating new plain-text RDoc::Markup formatters.  See also
 # RDoc::Markup::FormatterTestCase

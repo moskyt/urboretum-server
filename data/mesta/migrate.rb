@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 Town.create({
 :name => "Rokycany",
 :department => "Rokycany",

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'journey'
 require 'forwardable'
 require 'active_support/core_ext/object/blank'

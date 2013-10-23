@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # A visitor for converting a dynamic Sass tree into a static Sass tree.
 class Sass::Tree::Visitors::Perform < Sass::Tree::Visitors::Base
   # @param root [Tree::Node] The root node of the tree to visit.

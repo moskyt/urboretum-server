@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'set'
 require 'find'
 require 'digest/sha1'

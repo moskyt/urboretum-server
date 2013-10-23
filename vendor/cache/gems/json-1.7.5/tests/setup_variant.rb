@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 case ENV['JSON']
 when 'pure'
   $:.unshift 'lib'

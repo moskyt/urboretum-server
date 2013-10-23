@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Sass
   module SCSS
     # A parser for a static SCSS tree.

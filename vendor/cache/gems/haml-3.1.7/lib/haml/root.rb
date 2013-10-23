@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Haml
   # The root directory of the Haml source tree.
   # This may be overridden by the package manager

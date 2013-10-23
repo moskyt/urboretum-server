@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'forwardable'
 require File.expand_path("../../helper", __FILE__)
 
