@@ -9,6 +9,14 @@ class Town < ActiveRecord::Base
   scope :fully_visited_by, lambda{|username| joins(:visits).where('visits.media_id IS NOT NULL AND visits.username = ?', username).group('towns.id')}
   scope :in, lambda{|department| where(:department => department)}
 
+  def image_url
+    
+  end
+
+  def self.random
+    order("RAND()")
+  end
+      
   def self.departments
     group(:department).all.map(&:department).compact.sort
   end

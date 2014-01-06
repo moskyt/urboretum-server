@@ -1,0 +1,21 @@
+%h1 Poznávačka
+
+- if @guess_town
+  - if @guess_town == @town
+    %p.good_guess Správně, #{@guess_town.name}!
+  - else
+    %p.bad_guess Nebyl to #{@guess_town.name}, ale #{@town.name}!
+
+%p.guess_status
+  Celkem pokusů: #{@x_guess.size}
+  - if @x_guess.any?
+    %br
+    Skóre: #{"%d%%" % (100.0 * @x_good.size / @x_guess.size)}
+  
+- if @visit  
+  %p
+    %img{:src => @visit.image_url}
+
+  %ul.guess
+    - (Town.random.where('id != ?', @visit.town_id).limit(4) + [@visit.town]).shuffle.each do |t|
+      %li= link_to t.name, {:id => @visit.id, :guess_id => t.id}
