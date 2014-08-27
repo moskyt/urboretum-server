@@ -8,6 +8,11 @@ class ApplicationController < ActionController::Base
   helper_method :instagram_user
 
   protected
+  
+  def formats=(values)
+      values << :html if values == [:iphone]
+      super(values)
+  end
 
   def format_for_iphone
     if request.env["HTTP_USER_AGENT"] and request.env["HTTP_USER_AGENT"][/(Mobile\/.+Safari)/]
