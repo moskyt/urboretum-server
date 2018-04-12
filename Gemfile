@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.3.0'
 
 gem 'rails', '3.2.14'
 gem 'capistrano'
@@ -19,8 +20,8 @@ group :assets do
 end
 
 group :production do
-  gem 'therubyracer', :platforms => :ruby
-  gem 'libv8', '~> 3.11.8'
+#  gem 'therubyracer', :platforms => :ruby
+#  gem 'libv8', '~> 3.11.8'
   gem 'execjs'
 end
 
