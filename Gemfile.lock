@@ -84,7 +84,7 @@ GEM
     mime-types (1.25.1)
     multi_json (1.13.1)
     multipart-post (2.0.0)
-    mysql2 (0.5.1)
+    mysql2 (0.3.21)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -160,7 +160,7 @@ DEPENDENCIES
   instagram
   jquery-rails
   magic_encoding
-  mysql2
+  mysql2 (~> 0.3.10)
   rails (~> 3.2)
   sass-rails (~> 3.2.3)
   sqlite3

@@ -28,7 +28,7 @@ group :production do
   gem 'execjs'
 end
 
-gem 'mysql2'
+gem 'mysql2', "~> 0.3.10"
 gem 'jquery-rails'
 
 group :development do
