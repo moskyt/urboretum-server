@@ -11,6 +11,11 @@ set :scm, :git
 set :repository, "git@github.com:moskyt/urboretum-server.git"  # Your clone URL
 # set :branch, "master"
 
+default_run_options[:pty] = true
+default_run_options[:shell] = '/bin/bash --login'
+ssh_options[:forward_agent] = true
+ssh_options[:paranoid] = false
+
 set :repository_cache, "git_cache"
 set :deploy_via, :remote_cache
 set :git_shallow_clone, 0

@@ -58,7 +58,7 @@ class InstagramController < ApplicationController
     if instagram_user
       @log = []
       @to_be_resolved = []
-      @instagram_client.user_recent_media(:count => 999).each do |entry|
+      @instagram_client.user_recent_media(:count => 9999).each do |entry|
         if entry[:tags].include?('urboretum')
           media = @instagram_client.media_item(entry.id)
           caption = media.caption.text
