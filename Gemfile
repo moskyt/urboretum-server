@@ -1,9 +1,12 @@
 source 'https://rubygems.org'
 ruby '2.3.0'
 
-gem 'rails', '3.2.14'
-gem 'capistrano'
-gem 'capistrano-mysqldump', :require => false
+gem 'rails', '~> 3.2'
+
+group :development do
+	gem 'capistrano', '~> 2.0'
+	gem 'capistrano-mysqldump', '1.1.1', :require => false
+end
 
 gem 'sqlite3'
 
@@ -31,3 +34,7 @@ gem 'jquery-rails'
 group :development do
   gem "magic_encoding"
 end
+
+#gem "rack-ssl", "~> 1.4.0"
+#gem "rack", "~> 1.5.4"
+
