@@ -38,3 +38,4 @@ end
 #gem "rack-ssl", "~> 1.4.0"
 #gem "rack", "~> 1.5.4"
 
+gem 'test-unit', '~> 3.0'
